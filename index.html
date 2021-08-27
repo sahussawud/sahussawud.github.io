@@ -1,0 +1,1454 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Sahussawud Khunruksa</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 13px;
+    color: #40484f;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.46153846;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+}
+
+p {
+    display: block;
+    margin-bottom: 1.3em;
+}
+
+a {
+    color: #0095ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0c65a5;
+    text-decoration: underline;
+}
+
+ul {
+    margin-top: 1rem;
+}
+
+li {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 1.3em;
+}
+
+.highlights>li>p {
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.67rem;
+}
+
+h3 {
+    font-size: 1.27rem;
+}
+
+em {
+    color: #757575;
+}
+
+blockquote {
+    margin-bottom: 1em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/* main container */
+
+#resume {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* every section wrapper */
+
+.section {
+    margin-bottom: 1rem;
+}
+
+section .location {
+    margin-right: .5em;
+    color: #606d76;
+    font-weight: 700;
+}
+
+#contact {
+    margin-top: .5rem;
+}
+
+#profiles .item {
+    padding: 0;
+}
+
+#header>#profiles,
+#header>#contact,
+#skills,
+#languages,
+#interests {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+#header>div {
+    line-height: 1.5;
+}
+
+#header>div>div {
+    margin-right: 1.2em;
+}
+
+#header h1.name {
+    font-size: 2.8rem;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+#header h2.label {
+    color: #202931;
+    font-size: 1.47rem;
+    font-weight: 300;
+}
+
+#header .picture {
+    width: 11em;
+    float: right;
+    border-radius: 4px;
+}
+
+.main-summary {
+    background: #f1f8ff;
+    padding: 1.2em 1em;
+    margin-top: 1rem;
+}
+
+.main-summary p {
+    margin: .15em 0 0;
+}
+
+h2.section-title {
+    display: inline-block;
+    background: #fff;
+    padding: 0 1em 0.3em 0;
+    color: #ff6d1f;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    font-size: .9rem;
+}
+
+.section>header {
+    position: relative;
+}
+
+.fa {
+    margin-right: 0.25em;
+}
+
+.section>header::after {
+    position: absolute;
+    left: 0;
+    top: .7em;
+    height: 1px;
+    background: #ccc;
+    content: "";
+    width: 100%;
+    z-index: -100;
+    display: block;
+}
+
+.section.main-summary>section {
+    margin: 0;
+}
+
+.section>section>header {
+    font-size: 1.38rem;
+    position: relative;
+    margin-top: .7em;
+}
+
+.section>section>header:first-of-type {
+    margin: 0;
+}
+
+.section>section>header .space-left {
+    position: absolute;
+    left: -1.56rem;
+    top: 5px;
+    color: #aaa;
+    line-height: 1;
+    opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+    display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+    font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+    content: "at "
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+    color: #606d76;
+    font-weight: 400;
+}
+
+.section header .date {
+    font-size: 1rem;
+    display: inline-table;
+    padding: .1em 0;
+    font-weight: 600;
+}
+
+ul.keywords,
+ul.courses {
+    margin-top: .5em;
+}
+
+ul.keywords li,
+ul.courses li {
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+    padding: 4px 5px 5px;
+    font-size: .9rem;
+    line-height: 1;
+    text-transform: lowercase;
+    color: #3e6d8e;
+    background-color: #dfeaf1;
+    border: 0 solid #dfeaf1;
+    white-space: nowrap;
+}
+
+ul.keywords li:hover,
+ul.courses li:hover {
+    background: #dfeaf0;
+}
+
+.item {
+    padding: .5em 0;
+}
+
+.gpa {
+    padding-bottom: .5em;
+}
+
+.fa.social {
+    font-size: 1.1em;
+}
+
+
+/* Social Media Brand Colors */
+
+.google-plus {
+    color: #dd4b39;
+}
+
+.tumblr {
+    color: #32506d;
+}
+
+.foursquare {
+    color: #0072b1;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.linkedin {
+    color: #007bb6;
+}
+
+.pinterest {
+    color: #cb2027;
+}
+
+.dribbble {
+    color: #ea4c89;
+}
+
+.instagram {
+    color: #517fa4;
+}
+
+.twitter {
+    color: #00aced;
+}
+
+.soundcloud {
+    color: #ff3a00;
+}
+
+.wordpress {
+    color: #21759b;
+}
+
+.youtube {
+    color: #bb0000;
+}
+
+.github {
+    color: #171515;
+}
+
+.stack-overflow {
+    color: #828386;
+    position: relative;
+}
+
+.flickr {
+    color: #ff0084;
+}
+
+.stack-overflow::after {
+    position: absolute;
+    left: 0;
+    content: '\f16c';
+    color: #f68a1f;
+    overflow: hidden;
+    height: 100%;
+}
+
+.telegram {
+    color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+    width: 15em;
+    padding: 0 .5em .5em 0;
+    border-bottom: none;
+}
+
+#skills .item {
+    width: 16em;
+}
+
+#skills .item .keywords {
+    width: 15em;
+}
+
+
+/* Skill chart */
+
+.level {
+    margin-bottom: .5em;
+}
+
+.level .bar {
+    border: 1px solid #ddd;
+    display: block;
+    width: 10em;
+    height: 5px;
+    position: relative;
+}
+
+.level .bar::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    background: black;
+    height: 5px;
+}
+
+.level.beginner .bar::after {
+    background: #EB5F51;
+    width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+    background: #ffdf1f;
+    width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+    background: #5CB85C;
+    width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+    background: #59C596;
+    width: 10em;
+}
+
+#references .item {
+    padding-left: .5em;
+    border-left: 5px solid #ff6d1f;
+}
+
+.toggle-item {
+  visibility: hidden;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.display {
+    display: block;
+    opacity: 1 !important;
+}
+
+.margin1 {
+    margin-bottom: .5rem;
+}
+
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+    #resume {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+    li {
+        margin-left: 1.5em;
+    }
+    #resume {
+        width: 820px;
+        margin: 2rem auto;      
+    }
+    .section>section>header .space-left {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .section>section {
+        margin-left: 1.67rem;
+    }
+    .toggle-item {
+        transform: translate(-9999px);
+    }
+    .toggle-item+label {
+        display: block;
+        margin-top: -16px;
+    }
+    .toggle-item:checked+label:after {
+        content: '\f0d7';
+    }
+    .toggle-item+label:after {
+        float: left;
+        cursor: pointer;
+        margin-left: -20px;
+        color: #aaa;
+        font-size: 16px;
+        content: '\f0da';
+        font-family: Fontawesome;
+    }
+    .toggle-item~.item {
+        height: 0;
+        opacity: 0;
+    }
+    .toggle-item:checked~.item {
+        height: auto;
+        opacity: 1;
+        transition: all .5s linear;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "| ";
+    }
+    .header-left {
+        float: left;
+        width: 70%;
+        word-break: normal;
+    }
+    .section header .date {
+        float: right;
+        padding: .2em;
+    }
+    .display {
+        display: none;
+    }
+    .display:not(.none) {
+        display: block;
+    }
+}
+
+@media print {
+    #resume {
+        margin: 0;
+        padding: 0;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        line-height: 1.3;
+        /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
+    }
+    @page {
+        margin: 1cm 1.4cm;
+    }
+    .item-count {
+        display: none;
+    }
+    .company::before,
+    .institution::before,
+    .organization::before,
+    .awarder::before {
+        content: "at ";
+    }
+    .main-summary {
+        padding: 2rem 0;
+    }
+    .section {
+        margin: .8rem 0;
+        padding: 0;
+    }
+    .section header {
+        padding-bottom: .15rem;
+    }
+    .section .location {
+        padding-bottom: .15rem;
+    }
+    .stack-overflow::after {
+        content: "";
+    }
+    .fa.social {
+        color: #828386;
+    }
+    ul {
+        margin-top: .4em;
+    }
+    ul,
+    li {
+        padding: 0;
+    }
+    ul.keywords li,
+    ul.courses li {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        text-transform: lowercase;
+    }
+    ul.keywords li::after,
+    ul.courses li::after {
+        padding: 0 0 0 .1rem;
+        content: " |";
+    }
+    ul.keywords::before,
+    ul.courses::before {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+    ul.keywords::before {
+        content: "Skills acquired: ";
+    }
+    #skills .keywords::before {
+        content: '';
+    }
+    .section p {
+        margin: 0;
+        padding: 0;
+    }
+    ul.courses::before {
+        content: "Major courses: ";
+    }
+    ul.keywords li:last-of-type::after,
+    ul.courses li:last-of-type::after {
+        content: "";
+    }
+    .level em {
+        font-style: normal;
+        padding: .1em 0;
+    }
+    .level .bar {
+        display: none;
+    }
+    #profiles .item {
+        padding: 0;
+    }
+    .item.display {
+        display: block;
+        opacity: 1 !important;
+    }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<img class="picture" src="https://media-exp1.licdn.com/dms/image/C5603AQGgW64oJGQ-1Q/profile-displayphoto-shrink_200_200/0/1611853959074?e&#x3D;1635379200&amp;v&#x3D;beta&amp;t&#x3D;VqLRohYdbiCo_mRNFm10hT1x6kbojXz_P61VgJ5TBG8" alt="Sahussawud Khunruksa" />
+    		<div class="middle">
+    			<h1 class="name">Sahussawud Khunruksa</h1>
+    			<h2 class="label">Software Engineer Student at IT, KMITL</h2>
+    		</div>
+    		
+    		<span class="location">
+    			<span class="address">Chonburi,</span> 
+    			<span class="countryCode">TH</span> 
+    		</span>
+    		
+    <div> Born in Bangkok, Thailand in 2000</div>
+    		<div id="contact">
+    			<div class="website">
+    				<span class="fa fa-external-link"></span>
+    				<a target="_blank" target="_blank" href="https://sahussawud.com">https://sahussawud.com</a>
+    			</div>
+    			<div class="email">
+    				<span class="fa fa-envelope-o"></span>
+    				<a href="mailto:sahussawud@hotmail.com">sahussawud@hotmail.com</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/sahussawud-khunruksa-221a18150/">Sahussawud Khunruksa</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/sahussawud">Sahussawud</a>
+    					</span> 
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fa fa-medium medium social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://poundsahussawud.medium.com/">Pound Sahussawud</a>
+    					</span> 
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section main-summary">
+    		<section>
+    			<div><p>Falling in love in cutting-edge technologies and businesses. And willing to see Thailand and SEA forward</p></div>
+    		</section>
+    	</section>
+    
+    <section class="section margin1">
+    	<header>
+    		<h2 class='section-title'>Skills</h2>
+    	</header>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				Web Development
+    			</h3>
+    			 
+    			<div class="level master">
+    				<em>master</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>html</li>
+    				<li>css</li>
+    				<li>javascript</li>
+    				<li>django</li>
+    				<li>nodejs</li>
+    				<li>php</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				System Design
+    			</h3>
+    			 
+    			<div class="level master">
+    				<em>master</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>UML</li>
+    				<li>Database Design</li>
+    				<li>Cloud-Based Architecture</li>
+    				<li>Microservice Architecture</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				DevOps
+    			</h3>
+    			 
+    			<div class="level intermediate">
+    				<em>intermediate</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>AWS</li>
+    				<li>Heroku</li>
+    				<li>Github Workflow</li>
+    				<li>CI/CD</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Mobile Application Development
+    			</h3>
+    			 
+    			<div class="level intermediate">
+    				<em>intermediate</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>react-native</li>
+    				<li>redux</li>
+    				<li>graphql</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Microcontroller
+    			</h3>
+    			 
+    			<div class="level intermediate">
+    				<em>intermediate</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Arduino</li>
+    				<li>MQTT</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Artificial Intelligent
+    			</h3>
+    			 
+    			<div class="level beginner">
+    				<em>beginner</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>nlp</li>
+    				<li>machine learning</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(3)</span></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
+            <label for="work-item-0"></label>
+    
+    			<header>
+    				<div class="position">Web Developer (Contract)</div>
+    				<div class="company">Buzzfreeze Solution</div>
+    				<div class="date">
+    				  <span class="startDate">August 2021</span> 
+    					<span class="endDate">- September 2021</span> 
+    				</div>
+    			</header>
+    			
+        	<span class="website">
+        		<a target="_blank" href="https://www.buzzfreeze.com">https://www.buzzfreeze.com</a>
+        	</span>      	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>Computer consultancy and computer facilities management company. They are multi cross-functional team work together to achieve customer satisfaction</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Handed-on React.js SPA web application interacting with GrapQL</p></li>
+                <li><p>Multi cross-functional team work together to achieve customer satisfaction</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+            <input id="work-item-1" type="checkbox" class="toggle-item" />
+            <label for="work-item-1"></label>
+    
+    			<header>
+    				<div class="position">Junior Software Engineer (Contract)</div>
+    				<div class="company">CMKL Innovation Lab</div>
+    				<div class="date">
+    				  <span class="startDate">April 2021</span> 
+    					<span class="endDate">- August 2021</span> 
+    				</div>
+    			</header>
+    			
+        	<span class="website">
+        		<a target="_blank" href="https://www.cmkl.ac.th/innovationlab">https://www.cmkl.ac.th/innovationlab</a>
+        	</span>      	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>a unique hybrid research & development group, believe in big dreams and dedication to make impact to the society through the power of creativity, design, and deep tech</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Develop and direct software system validation and test methods.</p></li>
+                <li><p>Work closely with  cross-functional departments to communicate project statuses and proposals.</p></li>
+                <li><p>Apply best practices and standard operating procedures.</p></li>
+                <li><p>Create innovative solutions to meet technical needs.</p></li>
+            </ul>
+        	</div>
+        </section>
+        <section class="work-item">
+    
+            <input id="work-item-2" type="checkbox" class="toggle-item" />
+            <label for="work-item-2"></label>
+    
+    			<header>
+    				<div class="position">Back End Intern</div>
+    				<div class="company">CMKL University</div>
+    				<div class="date">
+    				  <span class="startDate">June 2020</span> 
+    					<span class="endDate">- August 2020</span> 
+    				</div>
+    			</header>
+    			
+        	<span class="website">
+        		<a target="_blank" href="https://www.cmkl.ac.th">https://www.cmkl.ac.th</a>
+        	</span>      	<div class="item" id="work-item">
+            <div class="summary">
+              <p><p>Established as a collaboration between Carnegie Mellon University (CMU) and King Mongkut's Institute of Technology Ladkrabang (KMITL), CMKL University will provide cutting-edge engineering research and education in Southeast Asia. By bridging world-class partnerships with local context, CMKL makes technologies accessible to its society and creates innovations that will benefit Thailand and the Southeast Asia region. I attended to Circle team, Social Sharing Application buliders, my responsibility is designing and developing REST API to be easy to understand for mobile client consuming them. It's a challenge oppotunity to deliver a future-proof, secure and fast-pace development REST API.</p></p>
+            </div>
+            <ul class="highlights">
+                <li><p>Design and Develop software system validation and test methods.</p></li>
+                <li><p>Direct software programming initiatives.</p></li>
+                <li><p>Work closely with  cross-functional departments to communicate project statuses and proposals.</p></li>
+                <li><p>Apply best practices and standard operating procedures such as API Specification</p></li>
+                <li><p>Create innovative solutions to meet company’s technical needs.</p></li>
+            </ul>
+        	</div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Projects <span class="item-count">(6)</span></h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
+    
+          <header>
+            <div class="position">Uriné</div>
+            <div class="date">
+              <span class="startDate">January 2019</span>
+              <span class="endDate">- January 2021</span>
+            </div>
+          </header>
+          <span class="website">
+            <a target="_blank" href="https://urine.herokuapp.com">https://urine.herokuapp.com</a>
+          </span>
+          <ul class="keywords">
+              <li>web application</li>
+              <li>machine learning</li>
+              <li>react.js</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+                <li><p>3rd award at HealthHack  by Prudential Thailand 2021</p></li>
+                <li><p>Basic urine analysis back by Covolution Neural Network, Deep Learning to classify input picture from your smartphones that can be used every single day</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header>
+            <div class="position">FarmHug</div>
+            <div class="date">
+              <span class="startDate">September 2019</span>
+              <span class="endDate">- November 2021</span>
+            </div>
+          </header>
+          <span class="website">
+            <a target="_blank" href="https://sahussawud.github.io/FarmHug">https://sahussawud.github.io/FarmHug</a>
+          </span>
+          <ul class="keywords">
+              <li>Mobile Application</li>
+              <li>react-native</li>
+              <li>graphQL</li>
+              <li>mongoDB</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+                <li><p>Cattle Management Mobile Application</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header>
+            <div class="position">Clinic Management Application</div>
+            <div class="date">
+              <span class="startDate">April 2020</span>
+              <span class="endDate">- June 2020</span>
+            </div>
+          </header>
+          <span class="website">
+            <a target="_blank" href="https://github.com/sahussawud/CarRental">https://github.com/sahussawud/CarRental</a>
+          </span>
+          <ul class="keywords">
+              <li>Web Application</li>
+              <li>Django</li>
+              <li>PostgreSQL</li>
+              <li>Bootstrap</li>
+              <li>Vuejs</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+                <li><p>Doing everything in SDLC such as Requirements gathering, Designing Database and UI, Developing Application</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header>
+            <div class="position">CarRental</div>
+            <div class="date">
+              <span class="startDate">May 2019</span>
+              <span class="endDate">- March 2020</span>
+            </div>
+          </header>
+          <span class="website">
+            <a target="_blank" href="https://github.com/sahussawud/CarRental">https://github.com/sahussawud/CarRental</a>
+          </span>
+          <ul class="keywords">
+              <li>Web Application</li>
+              <li>Django</li>
+              <li>PostgreSQL</li>
+              <li>Bootstrap</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+                <li><p>Car Rental Management Application</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header>
+            <div class="position">CTF - Web Vulnerability</div>
+            <div class="date">
+              <span class="startDate">September 2020</span>
+              <span class="endDate">- December 2020</span>
+            </div>
+          </header>
+          <span class="website">
+            <a target="_blank" href="https://itlawgame.herokuapp.com/">https://itlawgame.herokuapp.com/</a>
+          </span>
+          <ul class="keywords">
+              <li>websecurity</li>
+              <li>OWASP</li>
+              <li>CTF</li>
+              <li>Bootstrap</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+                <li><p>A series of walkthroughs on how to attack web application vulnerabilities according OWASP Guide</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+    
+          <header>
+            <div class="position">The Galaxy Of Dictionary</div>
+            <div class="date">
+              <span class="startDate">August 2019</span>
+              <span class="endDate">- October 2021</span>
+            </div>
+          </header>
+          <span class="website">
+            <a target="_blank" href="https://sahussawud.github.io/The-Galaxy-Of-Dictionary/">https://sahussawud.github.io/The-Galaxy-Of-Dictionary/</a>
+          </span>
+          <ul class="keywords">
+              <li>game</li>
+              <li>javascript</li>
+              <li>css</li>
+          </ul>
+          <div class="item">
+            <ul class="highlights">
+                <li><p>Typing game for challenge your typespeed</p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Volunteer</h2>
+      </header>
+      <section id="volunteer">
+        <section class="volunteer-item">
+    
+            <input id="volunteer-item-0" type="checkbox" class="toggle-item" checked="checked" />
+            <label for="volunteer-item-0"></label>
+    
+          <header>
+            <div class="header-left">
+              <div class="position">
+                Teaching Assistant
+              </div>
+              <div class="organization">
+                IT KMITL
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              May 2019
+              </span>
+              <span class="endDate">
+              - May 2019
+              </span>
+            </div>
+          </header>
+          <div class="website">
+            <a target="_blank" href="https://www.it.kmitl.ac.th">https://www.it.kmitl.ac.th</a>
+          </div>
+          <div class="item">
+            <div class="summary">
+              <p><p>As Teaching Assistant in past course. Main resposibilities are contributing lecturer in lecture, lab and assignment, and providing Office Hour to students who might need help in some situation</p></p>
+            </div>
+            <ul class="highlights">
+              <li><p>Computer Programming [FALL 2019] [BIT]</p></li>
+              <li><p>Database Concept [SPRING 2020] [ITDSBA]</p></li>
+              <li><p>Mobile Device Programming [FALL 2021] [IT]</p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="volunteer-item">
+    
+            <input id="volunteer-item-1" type="checkbox" class="toggle-item" />
+            <label for="volunteer-item-1"></label>
+    
+          <header>
+            <div class="header-left">
+              <div class="position">
+                Teaching Assistant 
+              </div>
+              <div class="organization">
+                15th IT Camp
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              May 2019
+              </span>
+              <span class="endDate">
+              - May 2019
+              </span>
+            </div>
+          </header>
+          <div class="website">
+            <a target="_blank" href="https://15.itcamp.in.th">https://15.itcamp.in.th</a>
+          </div>
+          <div class="item">
+            <div class="summary">
+              <p><p>IT Camp is an IT guidance camp for students in high school, Grade 10-12 or vocational training  students, is well-loved and ready to learn technology from the undergrade student from IT Ladkrabang. In addition to bringing a knowledge tightly that able to go back and deliver fun over the course of 4 days and 3 nights, with a limit of 120 people only. As my first experience to be a Teach Assistant. I have got a lot of experience of  Micro-controller such as Arduino Board, Sensor, Micro-controller Programming, Real-time Database(firebase) etc. There are many impressive moments in Dobby of Things.</p></p>
+            </div>
+          </div>
+        </section>
+        <section class="volunteer-item">
+    
+            <input id="volunteer-item-2" type="checkbox" class="toggle-item" />
+            <label for="volunteer-item-2"></label>
+    
+          <header>
+            <div class="header-left">
+              <div class="position">
+                Club President
+              </div>
+              <div class="organization">
+                IT SPORT CLUB
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              May 2019
+              </span>
+              <span class="endDate">
+              - May 2019
+              </span>
+            </div>
+          </header>
+          <div class="website">
+            <a target="_blank" href="https://www.facebook.com/itkmitlfc">https://www.facebook.com/itkmitlfc</a>
+          </div>
+          <div class="item">
+            <div class="summary">
+              <p><p>Connecting people in club with sport activities, also support it student's sport team to prepare for competitions.</p></p>
+            </div>
+            <ul class="highlights">
+              <li><p>Soccer IT Reunion host</p></li>
+              <li><p>Support supplyment for sport team</p></li>
+              <li><p>Soccer training camp host</p></li>
+              <li><p>Also CenterBack player in IT soccer team</p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(1)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header>
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor of Science - BSc
+              </div>
+              <div class="area">
+                Information Technology
+              </div>
+              <div class="institution">
+                Faculty of Information Technology, King Mongkut&#x27;s Institute of Technology Ladkrabang
+              </div>
+            </div>
+            <div class="date">
+              <span class="startDate">
+              2018
+              </span>
+              <span class="endDate">
+              - 2022
+              </span>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+            <div class='gpa'>
+              <strong> Grade:</strong> <span>3.71</span>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Awards</h2>
+      </header>
+      <section id="awards">
+        <section class="award-item">
+            <input id="award-item-0" type="checkbox" class="toggle-item" checked="checked" />
+            <label for="award-item-0"></label>
+    
+          <header>
+            <div class="header-left">
+              <div class="title">
+                3rd Place on Healthhack
+              </div>
+              <div class="awarder">
+                Prudential Thailand
+              </div>
+            </div>
+            <div class="date">
+              2021
+            </div>
+          </header>
+          
+          <div class="item">
+            <div class="summary">
+              <p><p>innovative 'HealthHack' competition, an artificial intelligence (AI)-focused hackathon which challenged participants to develop technology solutions that help Thai people live healthier.</p></p>
+            </div>
+          </div>
+        </section>
+        <section class="award-item">
+            <input id="award-item-1" type="checkbox" class="toggle-item" />
+            <label for="award-item-1"></label>
+    
+          <header>
+            <div class="header-left">
+              <div class="title">
+                1st Place on Smart Playground
+              </div>
+              <div class="awarder">
+                IT KMITL
+              </div>
+            </div>
+            <div class="date">
+              2021
+            </div>
+          </header>
+          
+          <div class="item">
+            <div class="summary">
+              <p><p>We developed Lazershot, the multiplayer game aimed to player to react with sensor around an shot them with laser gun. view out work at <a href='https://github.com/sahussawud/LazerShot' target='_blank'>https://github.com/sahussawud/LazerShot</a></p></p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title'>Languages</h2>
+      </header>
+      <section id="languages">
+        <div class="display">
+          <h3 class="language">
+            th
+          </h3>
+          <div class="item">
+            <div class="level fluency native speaker">
+              <em>Native Speaker</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <h3 class="language">
+            en
+          </h3>
+          <div class="item">
+            <div class="level fluency intermediate">
+              <em>Intermediate</em>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section margin1">
+      <header>
+        <h2 class='section-title' class='section-title'>Interests</h2>
+      </header>
+      <section id="interests">
+        <div class="item">
+          <h3 class="name">
+            Books
+          </h3>
+          <ul class="keywords">
+            <li>self-development</li>
+            <li>startup</li>
+            <li>business</li>
+            <li>technology</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Sports
+          </h3>
+          <ul class="keywords">
+            <li>soccer</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3 class="name">
+            Computer
+          </h3>
+          <ul class="keywords">
+            <li>web development</li>
+            <li>state-of-art technology</li>
+            <li>machine learning</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+  </body>
+</html>
